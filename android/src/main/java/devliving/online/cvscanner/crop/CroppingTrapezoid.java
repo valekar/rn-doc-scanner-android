@@ -124,6 +124,26 @@ public class CroppingTrapezoid {
     }
 
     public float[] getPoints() {
+        int deltaY = 100;
+        int deltaX = 100;
+       /* mPoints[0] = mPoints[0] - delta;
+        mPoints[1] = mPoints[1] + delta;
+        mPoints[2] = mPoints[2] + delta;
+        mPoints[3] = mPoints[3] + delta;
+        mPoints[4] = mPoints[4] + delta;
+        mPoints[5] = mPoints[5] - delta;
+        mPoints[6] = mPoints[6] - delta;
+        mPoints[7] = mPoints[7] - delta;*/
+
+
+        mPoints[0] = mPoints[0] - deltaX;
+        mPoints[1] = mPoints[1] - deltaY;
+        mPoints[2] = mPoints[2] + deltaX;
+        mPoints[3] = mPoints[3] - deltaY;
+        mPoints[4] = mPoints[4] + deltaX;
+        mPoints[5] = mPoints[5] + deltaY;
+        mPoints[6] = mPoints[6] - deltaX;
+        mPoints[7] = mPoints[7] + deltaY;
         return mPoints;
     }
 
