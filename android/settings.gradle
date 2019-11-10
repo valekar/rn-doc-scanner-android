@@ -1,0 +1,5 @@
+rootProject.name = 'rn-doc-scanner'
+
+include ':app'
+include ':openCVLibrary310'
+project(':openCVLibrary310').projectDir = new File(rootProject.projectDir,'../node_modules/rn-doc-scanner/android')
