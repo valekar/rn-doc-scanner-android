@@ -51,7 +51,7 @@ allprojects {
 }
 
 dependencies {
-    implementation project(':openCVLibrary310')
+    //implementation project(':openCVLibrary310')
     def googlePlayServicesVersion = safeExtGet("googlePlayServicesVersion", '11.8.0')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.facebook.react:react-native:+'
@@ -64,5 +64,5 @@ dependencies {
     compile "com.google.android.gms:play-services-basement:$googlePlayServicesVersion"
     compile "com.google.android.gms:play-services-vision:$googlePlayServicesVersion"
     compile 'online.devliving:mobilevision-pipeline:1.0.7'
-    //compile 'org.opencv:OpenCV-Android:3.1.0'
+    compile 'org.opencv:OpenCV-Android:3.1.0'
 }
